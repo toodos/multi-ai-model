@@ -1,0 +1,317 @@
+2026-03-20T07:14:35.514Z STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:14:39.277Z STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:14:39.614Z STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:14:39.930Z STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:14:40.364Z STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:23.859Z ENDPOINT=/v1/chat/completions STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:26.308Z ENDPOINT=/api/v1/chat/completions STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:26.660Z ENDPOINT=/v1/complete STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:26.984Z ENDPOINT=/api/v1/complete STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:27.510Z ENDPOINT=/v1/generate STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:27.859Z ENDPOINT=/api/v1/generate STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:28.574Z ENDPOINT=/v1/chat STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:29.287Z ENDPOINT=/api/v1/chat STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:30.005Z ENDPOINT=/v1/chat/completions STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:30.349Z ENDPOINT=/api/v1/chat/completions STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:31.058Z ENDPOINT=/v1/complete STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:31.367Z ENDPOINT=/api/v1/complete STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:31.686Z ENDPOINT=/v1/generate STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:32.098Z ENDPOINT=/api/v1/generate STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:32.413Z ENDPOINT=/v1/chat STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:33.186Z ENDPOINT=/api/v1/chat STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:33.961Z ENDPOINT=/v1/chat/completions STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:34.341Z ENDPOINT=/api/v1/chat/completions STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:34.765Z ENDPOINT=/v1/complete STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:35.597Z ENDPOINT=/api/v1/complete STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:35.918Z ENDPOINT=/v1/generate STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:36.250Z ENDPOINT=/api/v1/generate STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:36.646Z ENDPOINT=/v1/chat STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:36.977Z ENDPOINT=/api/v1/chat STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:37.387Z ENDPOINT=/v1/chat/completions STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:37.693Z ENDPOINT=/api/v1/chat/completions STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:38.104Z ENDPOINT=/v1/complete STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:38.479Z ENDPOINT=/api/v1/complete STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:38.821Z ENDPOINT=/v1/generate STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:39.537Z ENDPOINT=/api/v1/generate STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:39.858Z ENDPOINT=/v1/chat STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:40.663Z ENDPOINT=/api/v1/chat STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:41.483Z ENDPOINT=/v1/chat/completions STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:41.792Z ENDPOINT=/api/v1/chat/completions STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:42.110Z ENDPOINT=/v1/complete STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:42.437Z ENDPOINT=/api/v1/complete STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:43.149Z ENDPOINT=/v1/generate STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:43.455Z ENDPOINT=/api/v1/generate STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:16:43.774Z ENDPOINT=/v1/chat STATUS=404 BODY=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.18.0</center>
+</body>
+</html>
+
+2026-03-20T07:16:44.493Z ENDPOINT=/api/v1/chat STATUS=405 BODY=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+2026-03-20T07:31:09.125Z ENDPOINT=/v1/chat/completions STATUS=400 BODY={"success":false,"error":{"message":"Invalid service or alias: \"pollination/flux-schnell\". Must be a valid service name or alias.","code":"BAD_REQUEST","timestamp":"2026-03-20T07:31:10.997Z"},"status":400}
+2026-03-20T07:31:10.283Z ENDPOINT=/v1/chat/completions STATUS=400 BODY={"success":false,"error":{"message":"Invalid service or alias: \"pollination/amazon-nova-micro\". Must be a valid service name or alias.","code":"BAD_REQUEST","timestamp":"2026-03-20T07:31:12.208Z"},"status":400}
+2026-03-20T07:31:11.011Z ENDPOINT=/v1/chat/completions STATUS=400 BODY={"success":false,"error":{"message":"Invalid service or alias: \"pollination/perplexity-sonar\". Must be a valid service name or alias.","code":"BAD_REQUEST","timestamp":"2026-03-20T07:31:12.958Z"},"status":400}
+2026-03-20T07:31:11.781Z ENDPOINT=/v1/chat/completions STATUS=400 BODY={"success":false,"error":{"message":"Invalid service or alias: \"pollination/deepseek-v3.2\". Must be a valid service name or alias.","code":"BAD_REQUEST","timestamp":"2026-03-20T07:31:13.688Z"},"status":400}
+2026-03-20T07:31:12.542Z ENDPOINT=/v1/chat/completions STATUS=400 BODY={"success":false,"error":{"message":"Invalid service or alias: \"pollination/claude-haiku-4.5\". Must be a valid service name or alias.","code":"BAD_REQUEST","timestamp":"2026-03-20T07:31:14.487Z"},"status":400}
+2026-03-20T07:35:26.781Z POLL_MODELS_LOADED count=59
+2026-03-20T07:35:27.836Z ENDPOINT=/v1/chat/completions REQUESTED=pollination/flux-schnell RESOLVED=flux-schnell STATUS=400 BODY={"success":false,"error":{"message":"Invalid service or alias: \"flux-schnell\". Must be a valid service name or alias.","code":"BAD_REQUEST","timestamp":"2026-03-20T07:35:29.757Z"},"status":400}
+2026-03-20T07:35:30.316Z ENDPOINT=/v1/chat/completions REQUESTED=pollination/amazon-nova-micro RESOLVED=amazon-nova-micro STATUS=200 BODY={"id":"pllns_393a4a871c439bb70699a5bfaadee971","object":"chat.completion","created":1773992132,"model":"amazon.nova-micro-v1:0","provider":"bedrock","choices":[{"index":0,"message":{"role":"assistant","content":"To test the functionality of pollination selection after setting a real key, we'll follow a structured approach. Here’s a step-by-step outline:\n\n### Step 1: Set Up the Environment\nEnsure you have a working environment where the pollination selection logic can be tested. This includes:\n\n1. **Access"},"finish_reason":"length"}],"usage":{"prompt_tokens":8,"completion_tokens":64,"total_tokens":72,"prompt_tokens_details":{"cached_tokens":0}}}
+2026-03-20T07:37:59.351Z POLL_MODELS_LOADED count=59
+2026-03-20T07:38:00.463Z ENDPOINT=/v1/chat/completions REQUESTED=pollination/flux-schnell RESOLVED=flux-schnell STATUS=400 BODY={"success":false,"error":{"message":"Invalid service or alias: \"flux-schnell\". Must be a valid service name or alias.","code":"BAD_REQUEST","timestamp":"2026-03-20T07:38:02.335Z"},"status":400}
+2026-03-20T07:38:03.662Z ENDPOINT=/v1/chat/completions REQUESTED=pollination/amazon-nova-micro RESOLVED=amazon-nova-micro STATUS=200 BODY={"id":"pllns_046d61d6f6df7626d6af0509ebdf0f0b","object":"chat.completion","created":1773992285,"model":"amazon.nova-micro-v1:0","provider":"bedrock","choices":[{"index":0,"message":{"role":"assistant","content":"**Hey!**\n\nHere's a detailed breakdown of how I can assist you:\n\n### <think>Your detailed reasoning here\n- Understand the user's intent based on their message.\n- Provide relevant and helpful information or support.\n- Use appropriate formatting and examples to make the response clear and easy to follow.</think>\n\n### What I can help you with\n\n* **General Information**: Provide facts, explanations, or definitions on various topics.\n* **Technical Support**: Assist with coding issues, debugging, or explaining programming concepts.\n* **Task Assistance**: Help with scheduling, reminders, or breaking down complex tasks into manageable steps.\n* **Recommendations**: Suggest books, movies, tools, or services based on your interests.\n\n### Example Scenarios\n\n* **Coding Help**:\n  <code language=\"python\">\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n  </code>\n\n* **Scheduling Task**:\n  * Break down the task into smaller steps.\n  * Set deadlines for each step.\n  * Provide a summary or checklist.\n\nIf you have a specific question or need assistance with something, just let me know!"},"finish_reason":"stop"}],"usage":{"prompt_tokens":64,"completion_tokens":251,"total_tokens":315,"prompt_tokens_details":{"cached_tokens":0}}}
+2026-03-20T07:43:25.170Z POLL_MODELS_LOADED count=59
+2026-03-20T07:43:26.235Z ENDPOINT=/v1/chat/completions REQUESTED=pollination/flux-schnell RESOLVED=flux-schnell STATUS=400 BODY={"success":false,"error":{"message":"Invalid service or alias: \"flux-schnell\". Must be a valid service name or alias.","code":"BAD_REQUEST","timestamp":"2026-03-20T07:43:28.171Z"},"status":400}
+2026-03-20T07:43:27.626Z ENDPOINT=/v1/chat/completions REQUESTED=pollination/amazon-nova-micro RESOLVED=amazon-nova-micro STATUS=200 BODY={"id":"pllns_393a4a871c439bb70699a5bfaadee971","object":"chat.completion","created":1773992132,"model":"amazon.nova-micro-v1:0","provider":"bedrock","choices":[{"index":0,"message":{"role":"assistant","content":"To test the functionality of pollination selection after setting a real key, we'll follow a structured approach. Here’s a step-by-step outline:\n\n### Step 1: Set Up the Environment\nEnsure you have a working environment where the pollination selection logic can be tested. This includes:\n\n1. **Access"},"finish_reason":"length"}],"usage":{"prompt_tokens":8,"completion_tokens":64,"total_tokens":72,"prompt_tokens_details":{"cached_tokens":0}}}
+2026-03-20T08:07:54.425Z POLL_MODELS_LOADED count=59
+2026-03-20T08:07:56.580Z ENDPOINT=/v1/chat/completions REQUESTED=pollination/flux-schnell RESOLVED=flux STATUS=404 BODY={"success":false,"error":{"message":"Model not found: flux","code":"NOT_FOUND","timestamp":"2026-03-20T08:07:58.533Z"},"status":404}
+2026-03-20T08:07:58.303Z ENDPOINT=/v1/chat/completions REQUESTED=pollination/amazon-nova-micro RESOLVED=nova-fast STATUS=200 BODY={"id":"pllns_f9f7e181e57b574b230bd48f588615bc","object":"chat.completion","created":1773994080,"model":"amazon.nova-micro-v1:0","provider":"bedrock","choices":[{"index":0,"message":{"role":"assistant","content":"To test pollination selection after setting a real key, you typically need to follow a series of steps to ensure that the pollination mechanism works correctly. Here’s a general approach to conducting such a test:\n\n### Steps to Test Pollination Selection After Setting a Real Key\n\n#### 1. **Set Up the Environment**\n"},"finish_reason":"length"}],"usage":{"prompt_tokens":8,"completion_tokens":64,"total_tokens":72,"prompt_tokens_details":{"cached_tokens":0}}}
