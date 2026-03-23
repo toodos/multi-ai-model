@@ -663,8 +663,128 @@ app.post("/api/chat", async (req, res) => {
 });
 
 app.post("/api/image", async (req, res) => {
-  res.status(501).json({ error: "Image generation not supported by apifreellm. Use text generation instead." });
+  const { prompt, model, size, n } = req.body || {};
+
+  if (!prompt || typeof prompt !== 'string' || prompt.trim().length === 0) {
+    return res.status(400).json({ error: 'prompt (string) is required' });
+  }
+
+  // If Pollination is configured, attempt to use it for image generation
+  if (POLLINATION_KEY) {
+    try {
+      const r = await callPollinationImageAPI(model || 'midijourney', { prompt, size, n: n || 1 });
+
+      // If binary image returned, stream it
+      const contentType = r.headers && r.headers.get ? r.headers.get('content-type') : null;
+      if (contentType && contentType.startsWith('image/')) {
+        const buf = await r.arrayBuffer();
+        res.set('Content-Type', contentType);
+        return res.send(Buffer.from(buf));
+      }
+
+      // Try to parse JSON with image URLs or base64
+      let json;
+      try { json = await r.json(); } catch (e) { json = null; }
+
+      // Common shapes: { data: [{ url }] } or { outputs: [{b64_json}] }
+      if (json) {
+        // Convert base64 outputs to data URLs when present
+        if (Array.isArray(json.data) && json.data.length > 0) {
+          const mapped = json.data.map(d => ({ url: d.url, b64_json: d.b64_json }));
+          return res.json({ ok: true, provider: 'pollination', model: model, data: mapped });
+        }
+        if (Array.isArray(json.outputs) && json.outputs.length > 0) {
+          const mapped = json.outputs.map(o => o.b64_json ? `data:image/png;base64,${o.b64_json}` : o.url || o.path || o.id);
+          return res.json({ ok: true, provider: 'pollination', model: model, outputs: mapped });
+        }
+
+        // Fallback: return raw JSON
+        return res.json({ ok: r.ok, status: r.status, body: json });
+      }
+
+      // If we reached here, return raw text
+      const text = await r.text();
+      return res.status(r.status).send(text);
+    } catch (e) {
+      console.error('❌ Pollination image generation failed:', e && e.message);
+      return res.status(500).json({ error: `Pollination image generation failed: ${e.message}` });
+    }
+  }
+
+  return res.status(501).json({ error: "Image generation not configured. Set POLLINATION_KEY to enable." });
 });
+
+// Pollination image helper: tries several common image endpoints until one succeeds
+async function callPollinationImageAPI(model, body) {
+  if (!POLLINATION_KEY) throw new Error('POLLINATION_KEY is not configured');
+
+  // Ensure model index is loaded (reuse same lazy-loading logic as chat)
+  if (!global.POLL_MODEL_INDEX) {
+    try {
+      const metaUrl = `${POLLINATION_BASE.replace(/\/$/, '')}/v1/models`;
+      const r = await fetch(metaUrl);
+      const json = await r.json();
+      const index = {};
+      if (Array.isArray(json.data)) {
+        for (const m of json.data) {
+          if (m.id) index[m.id] = { id: m.id, aliases: m.aliases || [] };
+          if (Array.isArray(m.aliases)) for (const a of m.aliases) index[a] = { id: m.id, aliases: m.aliases };
+        }
+      } else if (Array.isArray(json)) {
+        for (const m of json) {
+          const id = m.name || m.id; if (!id) continue;
+          index[id] = { id, aliases: m.aliases || [] };
+          if (Array.isArray(m.aliases)) for (const a of m.aliases) index[a] = { id, aliases: m.aliases };
+        }
+      }
+      global.POLL_MODEL_INDEX = index;
+    } catch (e) {
+      global.POLL_MODEL_INDEX = {};
+    }
+  }
+
+  let desired = model || '';
+  if (desired.startsWith('pollination/')) desired = desired.replace(/^pollination\//, '');
+  const shortDesired = desired.replace(/^pollination\//, '');
+  let resolved = null;
+  if (POLLINATION_ALIAS_OVERRIDES[shortDesired]) resolved = POLLINATION_ALIAS_OVERRIDES[shortDesired];
+  const idx = global.POLL_MODEL_INDEX || {};
+  if (!resolved && idx[desired]) resolved = desired;
+  if (!resolved) {
+    for (const k of Object.keys(idx)) {
+      if (idx[k].id === desired) { resolved = idx[k].id; break; }
+    }
+  }
+  if (!resolved) {
+    const token = desired.toLowerCase();
+    for (const k of Object.keys(idx)) {
+      if (k.toLowerCase().includes(token) || (idx[k].id && idx[k].id.toLowerCase().includes(token))) { resolved = idx[k].id; break; }
+    }
+  }
+  if (!resolved) resolved = desired || 'midijourney';
+
+  const endpoints = ['/v1/images/generate','/v1/images/generations','/v1/images','/v1/images/create'];
+  const requestBody = { model: resolved, prompt: body.prompt, size: body.size, n: body.n || 1 };
+
+  for (const ep of endpoints) {
+    const url = `${POLLINATION_BASE.replace(/\/$/, '')}${ep}`;
+    try {
+      const r = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${POLLINATION_KEY}`
+        },
+        body: JSON.stringify(requestBody)
+      });
+
+      if (r.ok || r.status === 400 || r.status === 422) return r; // return for further handling
+    } catch (e) {
+      // try next endpoint
+    }
+  }
+  throw new Error('No Pollination image endpoints responded successfully');
+}
 
 app.post("/api/tts", async (req, res) => {
   const { text } = req.body;
